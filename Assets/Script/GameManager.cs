@@ -32,19 +32,20 @@ public class GameManager : MonoBehaviour
         if (indicePregunta >= preguntas.Length)
         {
             MostrarHistoria();
-            return;
         }
-
-        textoPreguntas.text = preguntas[indicePregunta];
+        else
+        {
+            textoPreguntas.text = preguntas[indicePregunta]; 
+        }
     }
 
     void MostrarHistoria()
     {
         textoHistoria.gameObject.SetActive(true);
-        textoHistoria.text = historia;
+        textoHistoria.text = string.Format(historia, palabrasGuardadas);
 
         textoPreguntas.gameObject.SetActive(false);
-        botonRespuesta.gameObject.SetActive(false);
+        botonRespuesta.SetActive(false);
         inputRespuesta.gameObject.SetActive(false);
     }
 }
