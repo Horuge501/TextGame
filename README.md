@@ -30,6 +30,10 @@ Los objetivos de este juego se enumeran a continuacion y se muestra su progreso
 - [x] Publicar el juego
 - [x] Compartir juego
 
+## Autores
+
+* Jorge Beristain - Programador - [@Horuge501](https://github.com/Horuge501)
+
 ## Motivación
 
 Aprender las bases de TextMeshPro en Unity
